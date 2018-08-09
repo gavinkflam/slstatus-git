@@ -7,7 +7,7 @@ const unsigned int interval = 8000;
 static const char unknown_str[] = "n/a";
 
 /* whether or not to skip items if no value can be retrieved */
-static const int skip_empty_items = 0;
+static const int skip_empty_items = 1;
 
 /* maximum output string length */
 #define MAXLEN 2048
@@ -65,6 +65,7 @@ static const int skip_empty_items = 0;
  */
 static const struct arg args[] = {
 	/* function          format             argument */
+	{ alsa_vol_perc,     "vol %s%% | ",     "Master" },
 	{ load_avg,          "load %.4s | ",    NULL },
 	{ cpu_perc,          "cpu %s%% | ",     NULL },
 	{ disk_free,         "hdd %sB | ",      "/" },
