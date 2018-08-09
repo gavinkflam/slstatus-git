@@ -1,0 +1,5 @@
+pkg/
+slstatus/
+src/
+*.tar.gz
+*.tar.xz
