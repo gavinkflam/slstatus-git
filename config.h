@@ -6,12 +6,16 @@ const unsigned int interval = 8000;
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
 
+/* whether or not to skip items if no value can be retrieved */
+static const int skip_empty_items = 0;
+
 /* maximum output string length */
 #define MAXLEN 2048
 
 /*
  * function            description                     argument (example)
  *
+ * alsa_vol_perc       ALSA volume in percent          mixer name (Master)
  * battery_perc        battery percentage              battery name (BAT0)
  *                                                     NULL on OpenBSD
  * battery_state       battery charging state          battery name (BAT0)

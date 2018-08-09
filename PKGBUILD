@@ -2,16 +2,16 @@
 
 pkgname=slstatus-git
 _pkgname=slstatus
-pkgver=r540.dd7f189
+pkgver=r542.d3197e5
 pkgrel=1
-_commit=dd7f1896aa9883f33b4d28cd192e8088db0cab5a
+_commit=d3197e5e3a679399443f3a2a825ed80d75e925a1
 pkgdesc='A status monitor for window managers'
 arch=('i686' 'x86_64')
 url='http://tools.suckless.org/slstatus'
-depends=('libx11')
+depends=('libx11' 'alsa-lib')
 makedepends=('git')
 license=('custom:ISC')
-source=("git+git://git.suckless.org/${_pkgname}#commit=${_commit}"
+source=("git+https://gitlab.com/gavinkflam/${_pkgname}.git#commit=${_commit}"
         "config.h")
 md5sums=('SKIP'
          'SKIP')
