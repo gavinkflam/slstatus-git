@@ -2,9 +2,9 @@
 
 pkgname=slstatus-git
 _pkgname=slstatus
-pkgver=r542.d3197e5
+pkgver=r543.8de15fb
 pkgrel=1
-_commit=d3197e5e3a679399443f3a2a825ed80d75e925a1
+_commit=8de15fb3e9ea4475cd50f29d49ae0d08eab22e11
 pkgdesc='A status monitor for window managers'
 arch=('i686' 'x86_64')
 url='http://tools.suckless.org/slstatus'
